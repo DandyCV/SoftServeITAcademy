@@ -8,17 +8,17 @@ else:
 '''№2 Площа фігури на вибір (прямокутник, трикутник, круг)'''
 user_figure = int(input("What figute area do you want to calculate? 1 - rectangle, 2 - triangle, 3 - circle "))
 if user_figure == 1:
-    figure_size1 = int(input("Enter the value of rectangle first side "))
-    figure_size2 = int(input("Enter the value of rectangle second side "))
+    figure_size1 = float(input("Enter the value of rectangle first side "))
+    figure_size2 = float(input("Enter the value of rectangle second side "))
     figure_area = figure_size1 * figure_size2
     print("The rectangle area =", figure_area)
 elif user_figure == 2:
-    figure_size1 = int(input("Enter the value of triangle side "))
-    figure_size2 = int(input("Enter the value of triangle height to the side "))
+    figure_size1 = float(input("Enter the value of triangle side "))
+    figure_size2 = float(input("Enter the value of triangle height to the side "))
     figure_area = figure_size1 * figure_size2 / 2
     print("The triangle area =", figure_area)
 elif user_figure == 3:
-    figure_size1 = int(input("Enter the value of circle radius "))
+    figure_size1 = float(input("Enter the value of circle radius "))
     figure_area = figure_size1 ** 2 * 3.14
     print("The circle area =", figure_area)
 else:
@@ -61,7 +61,7 @@ print("You can place the scene. Good luck." if hall_area**0.5 * 0.5 - stage_radi
       "You can't place the scene! Try another size.")
 
 
-'''№5 Розміняти суму куюрами 200, 100, 10, 1 грн'''
+'''№5 Розміняти суму купюрами 200, 100, 10, 1 грн'''
 user_sum = int(input("Enter the sum "))
 total_banknotes = "You need: "
 if user_sum < 1:
