@@ -26,5 +26,5 @@ for word in text_list:
     else:
         text_dict[word] = 1
 
-for word in text_dict:
+for word in sorted(text_dict):
     print('"%s": %d' %(word.capitalize(), text_dict[word]))
