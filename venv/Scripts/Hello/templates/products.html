@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Products{% endblock title %}
+{% block header %}Catalog of our products{% endblock header %}
+{% block content %}
+<h3> Solar panels</h3>
+<img src="{% static 'images/panels.jpg' %}" alt="panels" >
+<h3> Invertors</h3>
+<img src="{% static 'images/invertors.jpg' %}" alt="invertors" >
+<h3> Energy accumulation</h3>
+<img src="{% static 'images/accumulators.png' %}" alt="accumulators" >
+{% endblock content %}

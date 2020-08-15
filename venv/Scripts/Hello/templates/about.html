@@ -1,7 +1,13 @@
 {% extends "base.html" %}
+{% load static %}
 {% block title %}About{% endblock title %}
-{% block header %}About us{% endblock header %}
+{% block header %}About us:{% endblock header %}
+{% block img %}<img src="{% static 'images/emblem.jpg' %}" alt="emblem" >{% endblock img %}
 {% block content %}
-<h2>We study Python!</h2>
-<h3>Django framework right now</h3>
+<h2>We provide best solutions for Solar energy:</h2>
+<h3>* Solar panels</h3>
+<h3>* Solar station</h3>
+<h3>* Invertors</h3>
+<h3>* Telemetry</h3>
+<h3>* Energy accumulation</h3>
 {% endblock content %}

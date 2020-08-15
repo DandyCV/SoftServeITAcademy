@@ -7,8 +7,10 @@
     <title>{% block title %}Default title{% endblock title %}</title>
 </head>
 <body>
+    <h4><a href="/">Main</a> | <a href="/products/">Products</a> | <a href="/service/">Service</a> | <a href="/about/">About us</a> | <a href="/contacts/">Contacts</a> | Career | For investros</h4>
     <h1>{% block header %}{% endblock header %}</h1>
+    <div>{% block img %}{% endblock img %}</div>
     <div>{% block content %}{% endblock content %}</div>
-    <img src="{% static 'images/python.png' %}" alt="motivation" >
+
 </body>
 </html>

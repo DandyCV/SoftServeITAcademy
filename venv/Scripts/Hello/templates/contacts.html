@@ -1,10 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Hello Django</title>
-</head>
-<body>
-    <h1>Contacts</h1>
-</body>
-</html>
+{% extends "base.html" %}
+{% load static %}
+{% block title %}About{% endblock title %}
+{% block header %}About us:{% endblock header %}
+{% block img %}<img src="{% static 'images/emblem.jpg' %}" alt="emblem" >{% endblock img %}
+{% block content %}
+<h2>We provide best solutions for Solar energy:</h2>
+<h3>>E-mail: Star@energy.com</h3>
+<h3>>E-mail: ServiceStar@energy.com</h3>
+<h3>>Phone/Fax: +380 55 564 11 44</h3>
+<h3>><a href="https://www.t.me/star_energy/">Telegram</a></h3>
+<h3>><a href="https://www.instagram.com/star_energy/">Instagram</a></h3>
+<h3>><a href="https://twitter.com/star_energy/">Twitter</a></h3>
+<h3>>Address: 58023 Ukraine, Chernivtsy, Golovna str., b.200, of.11</h3>
+{% endblock content %}

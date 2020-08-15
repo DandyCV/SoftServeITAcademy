@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Main{% endblock title %}
+{% block header %}Welcome to Star Energy{% endblock header %}
+{% block img %}<img src="{% static 'images/plant.jpg' %}" alt="emblem" >{% endblock img %}
+{% block content %}
+<h3>Our projects gallery:</h3>
+<h3> Home station</h3>
+<img src="{% static 'images/home_station.jpg' %}" alt="home_station" >
+<h3> Solar container</h3>
+<img src="{% static 'images/container.jpg' %}" alt="container" >
+<h3> Remote telemetry</h3>
+<img src="{% static 'images/RTO.jpg' %}" alt="RTO" >
+{% endblock content %}

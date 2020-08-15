@@ -20,11 +20,12 @@ from django.views.generic import TemplateView
 
 
 urlpatterns = [
-    path('', views.index),
-    path('products/', views.products),
+    path('', TemplateView.as_view(template_name="Main.html")),
+    path('products/', TemplateView.as_view(template_name="products.html")),
     path('users/', views.users),
     path('about/', TemplateView.as_view(template_name="about.html",
         extra_context={"header": "About us"})),
+    path('service/', TemplateView.as_view(template_name="service.html")),
     path('contacts/', TemplateView.as_view(template_name="contacts.html")),
     path('admin/', admin.site.urls),
 ]
